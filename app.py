@@ -27,6 +27,8 @@ db.init_app(app)
 api = Api(app)
 CORS(app)
 
+from models import User
+
 @app.route('/')
 def home():
     return "Flask heroku app."
